@@ -2,7 +2,7 @@ blueprint:
   name: Motion-activated Light - based on target
   description: Turn on a light when motion is detected and a targets tells you too.
   domain: automation
-  source_url: https://github.com/home-assistant/core/blob/dev/homeassistant/components/automation/blueprints/motion_light.yaml
+  source_url: https://github.com/sbu79/homeassistant/blob/master/light_on_motion_if_needed.yaml
   input:
     motion_entity:
       name: Motion Sensor
@@ -27,7 +27,7 @@ blueprint:
           unit_of_measurement: seconds
     condition_target:
       name: Light condition
-      description: What entity tell you if lights should turn on?
+      description: What entity tells you if lights should turn on?
       selector:
         target:
           entity:
