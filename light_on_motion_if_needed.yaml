@@ -32,6 +32,7 @@ blueprint:
         target:
           entity:
             domain: input_boolean
+            domain: input_select
 
 # If motion is detected within the delay,
 # we restart the script.
